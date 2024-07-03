@@ -1,0 +1,181 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+$primary: rgb(133, 16, 16);
+$secondary: rgba(129, 15, 15, 0.483);
+
+$theme-colors: (
+    "primary": $primary
+);
+
+$theme-colors: map-merge($theme-colors, $theme-colors);
+
+:root {
+    --bs-primary: #{$primary};
+    --bs-secondary: #{$secondary};
+    --bs-success: #28a745;
+    --bs-info: #17a2b8;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #343a40;
+  }
+
+.navbar {
+    background-color: var(--bs-light);
+    height: 70px;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 1rm;
+}
+
+.navbar-nav .nav-link {
+    color: gray;
+    position: relative;
+    font-size: large;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: black;
+}
+
+.navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--bs-primary);
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::before, .navbar-nav .nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+}
+
+.section-header {
+    margin-bottom: 2rem; /* Add bottom margin to the section headers */
+    text-align: center;  /* Center align the section headers */
+    font-size: 2.5rem;   /* Adjust the font size */
+    color: #343a40;      /* Change the color */
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 15%;        /* Width of the underline */
+        height: 2px;         /* Height of the underline */
+        background-color: var(--bs-primary); /* Color of the underline */
+        margin: 0.5rem auto 0; /* Center the underline and add some spacing */
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10px;       /* Position it below the text */
+    }
+}  
+  
+
+.hero-section {
+    background: url('../img/about.webp') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.hero-section .container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.hero-section::before {
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section h1 {
+    font-size: 1.5em;
+}
+
+.hero-section h2 {
+    font-size: 1.1em;
+}
+
+.about-section .container {
+    margin-top: 0.5rm;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #dee2e6; 
+    transition: border-color 0.3s ease-in-out; 
+}
+.card:hover {
+    border-color: $primary;
+}
+.card-img-top {
+    flex: 1; 
+    object-fit: contain; 
+    max-height: 300px; 
+    width: 100%;
+}
+.card-body {
+    flex: 0 0 auto; 
+    background-color: #f8f9fa;
+    padding: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+.card:hover .card-body {
+    background-color: $secondary;
+}
+.card-title, .card-text {
+    color: black;
+}
+
+.img-container {
+    height: 20rem;
+    overflow: hidden;
+}
+
+.img-container img {
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-container:hover img {
+    transform: scale(1.1);
+}
+
+.fixed-height-card {
+    height: 20rem; // Set your desired fixed height
+    display: flex;
+    flex-direction: column;
+
+    .row {
+        flex: 1;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; // Center the text vertically
+        height: 100%;
+    }
+}
+
+@import "node_modules/bootstrap/scss/bootstrap";
