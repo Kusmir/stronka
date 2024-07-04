@@ -28,12 +28,12 @@ const cardsData = [
     let card = document.createElement('div');
     card.className = 'col-md-6';
     card.innerHTML = `
-      <div class="card h-100 fixed-height-card mt-4">
+      <div class="card h-70 fixed-height-card mt-4">
         <div class="row no-gutters">
-          <div class="col-md-6">
+          <div class="col-6">
             <img src="${cardData.imgSrc}" alt="Image" class="img-fluid">
           </div>
-          <div class="col-md-6">
+          <div class="col-6">
             <div class="card-body">
               <h5 class="card-title">${cardData.title}</h5>
               <p class="card-text">${cardData.text}</p>

@@ -22,7 +22,18 @@ $theme-colors: map-merge($theme-colors, $theme-colors);
 
 .navbar {
     background-color: var(--bs-light);
-    height: 70px;
+    height: 8vh;
+}
+
+.navbar-brand {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+
+    img {
+        height: 100%;
+        width: auto;
+    }
 }
 
 .navbar-nav .nav-item {
@@ -59,23 +70,23 @@ $theme-colors: map-merge($theme-colors, $theme-colors);
 }
 
 .section-header {
-    margin-bottom: 2rem; /* Add bottom margin to the section headers */
-    text-align: center;  /* Center align the section headers */
-    font-size: 2.5rem;   /* Adjust the font size */
-    color: #343a40;      /* Change the color */
+    margin-bottom: 2rem;
+    text-align: center; 
+    font-size: 2.5rem;
+    color: #343a40;
     position: relative;
 
     &::after {
         content: '';
         display: block;
-        width: 15%;        /* Width of the underline */
-        height: 2px;         /* Height of the underline */
-        background-color: var(--bs-primary); /* Color of the underline */
-        margin: 0.5rem auto 0; /* Center the underline and add some spacing */
+        width: 15%;
+        height: 2px;
+        background-color: var(--bs-primary);
+        margin: 0.5rem auto 0;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        bottom: -10px;       /* Position it below the text */
+        bottom: -10px;
     }
 }  
   
