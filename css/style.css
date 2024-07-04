@@ -12081,31 +12081,28 @@ textarea.form-control-lg {
 
 .card {
   display: flex;
-  flex-direction: column;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-  border: 1px solid #dee2e6;
-  transition: border-color 0.3s ease-in-out;
+  flex-direction: row;
+  height: 30vh;
+}
+.card img {
+  width: 30vh;
+  height: 30vh;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .card:hover {
   border-color: rgb(133, 16, 16);
 }
 
-.card-img-top {
-  flex: 1;
-  -o-object-fit: contain;
-     object-fit: contain;
-  max-height: 300px;
-  width: 100%;
-}
-
 .card-body {
-  flex: 0 0 auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #f8f9fa;
-  padding: 1rem;
   transition: background-color 0.3s ease-in-out;
+  overflow-y: auto;
 }
 
 .card:hover .card-body {
@@ -12114,37 +12111,6 @@ textarea.form-control-lg {
 
 .card-title, .card-text {
   color: black;
-}
-
-.img-container {
-  height: 20rem;
-  overflow: hidden;
-}
-
-.img-container img {
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  transition: transform 0.3s ease-in-out;
-}
-
-.img-container:hover img {
-  transform: scale(1.1);
-}
-
-.fixed-height-card {
-  height: 20rem;
-  display: flex;
-  flex-direction: column;
-}
-.fixed-height-card .row {
-  flex: 1;
-}
-.fixed-height-card .card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
 }
 
 /*!
