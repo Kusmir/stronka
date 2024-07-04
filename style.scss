@@ -162,7 +162,7 @@ $theme-colors: map-merge($theme-colors, $theme-colors);
 }
 
 .fixed-height-card {
-    height: 20rem; // Set your desired fixed height
+    height: 20rem; 
     display: flex;
     flex-direction: column;
 
@@ -173,7 +173,7 @@ $theme-colors: map-merge($theme-colors, $theme-colors);
     .card-body {
         display: flex;
         flex-direction: column;
-        justify-content: center; // Center the text vertically
+        justify-content: center; 
         height: 100%;
     }
 }
