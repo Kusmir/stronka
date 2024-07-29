@@ -1,199 +1,342 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Biuro Rachunkowe DUKAT</title>
-    <link rel = "icon" href="img/rk_logo.png">
+    <link rel="icon" href="img/rk_logo.png" />
 
     <!-- Bootstrap core CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css"
+    />
+
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
 
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
   </head>
   <body>
-    
-<main>
-  <!-- Navbar --> 
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="img/rk_logo.png">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarList" aria-controls="navbarList" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <main>
+      <header-component></header-component>
 
-      <div class="offcanvas offcanvas-end mw-80" tabindex="-1" id="navbarList">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="#about">O nas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="#certyfikaty">Certyfikaty</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="#kadra">Kadra</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="#oferta">Oferta</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="#kontakt">Kontakt</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <!-- End Navbar --> 
+      <div
+        data-bs-spy="scroll"
+        data-bs-target="#navbar-example2"
+        data-bs-offset="0"
+        class="scrollspy-example"
+        tabindex="0"
+      >
+        <!-- Hero section -->
+        <section id="hero" class="hero-section">
+          <div
+            class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column"
+          >
+            <h1>DUKAT</h1>
+            <h1>Biuro Rachunkowe</h1>
+            <h2>Kafał Ruśmirek</h2>
+          </div>
+        </section>
+        <!-- End Hero section -->
 
-  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-    <!-- Hero section -->
-    <section id="hero" class="hero-section">
-      <div class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column">
-        <h1> DUKAT</h1>
-        <h1>Biuro Rachunkowe</h1>
-        <h2> Rafał Kuśmirek </h2>
-      </div> 
-    </section>
-    <!-- End Hero section -->
-    
-    <!-- About section -->
-    <div id="about" class="pt-4"></div>
+        <!-- About section -->
+        <div id="about" class="pt-4"></div>
 
-    <section class="section about-section mt-5">
-      <div class="container">
-        <div class="section-header" data-aos="fade-bottom" data-aos-duration="1000" data-aos-once="true">O nas</div>
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-12" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
-            <img src="img/random1.jpg" alt="" class="img-fluid">
-          </div>
-          <div class="col-lg-8 col-md-8 col-12 ps-lg-5 mt-md-5"
-          data-aos="fade-up" data-aos-duration="700" data-aos-once="true">
-            <h2>Zapewniamy fachowość, solidność i rzetelność</h2>
-            <p>
-              Biuro Rachunkowe "DUKAT" świadczy kompleksową obsługę księgowo-podatkową 
-              oraz obsługę kadr i płac dla podmiotów o różnym profilu działalności
-              i formie prawnej. <br>
-              Oferujemy fachową pomoc przy zakładaniu firmy oraz przy wyborze 
-              najkorzystniejszej formy rozliczeń podatkowych.
-              Posiadamy wieloletnie doświadczenie w zakresie prowadzenia księgowości, 
-              dzięki któremu gwarantujemy Państwu usługi na najwyższym poziomie.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End About section -->
-
-    <!-- Certyfikaty section -->
-    <div id="certyfikaty" class="pt-4"></div>
-    <section class="section about-section mt-5">
-      <div class="container">
-        <div class="section-header"data-aos="fade-bottom" data-aos-duration="1000" data-aos-once="true">Certyfikaty</div>
-        <div class="row flex-row">
-          <div class="col-lg-8 col-9 ps-lg-5">
-            <h2>Podstawy działalności</h2>
-            <p>
-              Biuro rachunkowe DUKAT prowadzi swoją działalność na podstawie licencji MF nr 8455/98 na prowadzenie ksiąg rachunkowych.
-              Nasza działalność objęta jest ubezpieczeniem OC. <br>
-              Nasza praca to jednocześnie nasza pasja - dzięki czemu szczególnie dbamy o bieżące śledzenie wszystkich zmian w przepisach tak, aby jak najlepiej służyć wiedzą Naszym klientom.
-            </p>
-          </div>
-          <div class="col-lg-2 col-3">
-            <img src="img/certificate.png" alt="" class="img-fluid">
-          </div>
-          <div class="col-lg-2 d-none d-lg-block">
-            <img src="img/court.png" alt="" class="img-fluid">
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Certyfikaty section -->
-
-    <!-- Kadra section -->
-    <div id="kadra" class="pt-4"></div>
-    <section class="section kadra-section mt-5">
-      <div class="container mt-5">
-        <div class="row">
-          <div class="section-header"data-aos="fade-bottom" data-aos-duration="1000" data-aos-once="true">Kadra</div>
-        </div>
-        <div class="row">
-          <p>
-            Nasz zespół składa się z wykształconych i wykwalifikowanych pracowników w dziedzinie rachunkowości. <br>
-Posiadamy doświadczenie pozyskane przy prowadzeniu księgowości firm handlowych, produkcyjnych jak i usługowych. <br>
-Na bieżąco śledzimy nowości z zakresu prawa, finansów i rachunkowości, ciągle rozwijając swoje zdolności. <br>
-Dbamy o całość powierzonych nam spraw, nawet w najdrobniejszych szczegółach. <b>Bierzemy pełną odpowiedzialność za wykonaną pracę</b>.
-          </p>
-          <h1>Pracownicy</h1>
-          <div class="container my-5">
-            <div class="row row-cols-1 row-cols-lg-2 g-4">
-                <div class="col">
-                    <div class="card h-100 flex-row">
-                        <img src="img/ludzik.png" class="card-img-left" alt="Image 1">
-                        <div class="card-body card-description">
-                            <h5 class="card-title">Ludzik</h5>
-                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti corporis, labore reiciendis dolor tempore natus quidem delectus magni, quaerat non dolorum, ratione sequi veritatis nemo nobis. Veniam illum voluptatibus quidem!</p>
-                        </div>
-                    </div>
+        <section class="section about-section mt-5">
+          <div class="container">
+            <div
+              class="section-header"
+              data-aos="fade-bottom"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              O nas
+            </div>
+            <div class="row">
+              <div
+                class="col-lg-4 col-md-4 col-12"
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-once="true"
+              >
+                <img src="img/random1.jpg" alt="" class="img-fluid" />
+              </div>
+              <div
+                class="col-lg-8 col-md-8 col-12 ps-lg-5 mt-md-5"
+                data-aos="fade-up"
+                data-aos-duration="700"
+                data-aos-once="true"
+              >
+                <h2>Zapewniamy fachowość, solidność i rzetelność</h2>
+                <p class="text-justify">
+                  Biuro Rachunkowe "DUKAT" świadczy kompleksową obsługę
+                  księgowo-podatkową oraz obsługę kadr i płac dla podmiotów o
+                  różnym profilu działalności i formie prawnej. <br />
+                  Oferujemy fachową pomoc przy zakładaniu firmy oraz przy
+                  wyborze najkorzystniejszej formy rozliczeń podatkowych.
+                  Posiadamy wieloletnie doświadczenie w zakresie prowadzenia
+                  księgowości, dzięki któremu gwarantujemy Państwu usługi na
+                  najwyższym poziomie.
+                </p>
+                <div class="container d-flex pl-5 justify-content-center">
+                  <a href="about.html" class="btn btn-primary rounded-pill">
+                    Dowiedz się więcej
+                  </a>
                 </div>
-                <div class="col">
-                    <div class="card h-100 flex-row">
-                        <img src="img/zaglowka.png" class="card-img-left" alt="Image 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Żaglówka</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 flex-row">
-                        <img src="img/helikopter.png" class="card-img-left" alt="Image 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Helikopter</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 flex-row">
-                        <img src="https://via.placeholder.com/200" class="card-img-left" alt="Image 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title 4</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
+        <!-- End About section -->
+
+        <!-- Certyfikaty section -->
+        <div id="certyfikaty" class="pt-4"></div>
+        <section class="section certyfikaty-section mt-5">
+          <div class="container">
+            <div
+              class="section-header"
+              data-aos="fade-bottom"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              Certyfikaty
+            </div>
+            <div class="row flex-row">
+              <div class="col-lg-7 col-9 ps-lg-5">
+                <h2>Podstawy działalności</h2>
+                <p>
+                  Biuro rachunkowe DUKAT prowadzi swoją działalność na podstawie
+                  licencji MF nr 8455/98 na prowadzenie ksiąg rachunkowych.
+                  Nasza działalność objęta jest ubezpieczeniem OC. <br />
+                  Nasza praca to jednocześnie nasza pasja - dzięki czemu
+                  szczególnie dbamy o bieżące śledzenie wszystkich zmian w
+                  przepisach tak, aby jak najlepiej służyć wiedzą Naszym
+                  klientom.
+                </p>
+              </div>
+              <div class="col-lg-2 col-3 offset-lg-1">
+                <img src="img/certificate.png" alt="" class="img-fluid" />
+              </div>
+              <div class="col-lg-2 d-none d-lg-block">
+                <img src="img/court.png" alt="" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Certyfikaty section -->
+
+        <!-- Oferta section -->
+        <section id="oferta" class="section oferta-section mb-4 mx-4">
+          <div class="container">
+            <div
+              class="section-header"
+              data-aos="fade-bottom"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              Oferta
+            </div>
+            <div class="card-deck row justify-content-center">
+              <!-- Doradztwo Card -->
+              <div
+                class="card offer-card col-lg-3 m-3 mb-2"
+                data-aos="fade-down"
+                data-aos-duration="800"
+                data-aos-once="true"
+                data-aos-id="offer-card"
+              >
+                <div class="card-body">
+                  <a href="index.html" class="stretched-link"></a>
+                  <i class="bi bi-arrow-right-circle h3 link-icon"></i>
+                  <i
+                    class="bi bi-arrow-right-circle-fill h3 link-icon"
+                    style="opacity: 0"
+                  ></i>
+                  <div class="card-logo-container">
+                    <img
+                      src="img/taxes.png"
+                      alt=""
+                      width="100"
+                      class="rounded-icon"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h5 class="card-title">Doradztwo podatkowe</h5>
+                    <p class="card-text">generalnie to dobrze robimy.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Doradztwo Card -->
+
+              <!-- Uslugi Card -->
+              <div
+                class="card offer-card col-lg-3 m-3 mb-2"
+                data-aos="fade-down"
+                data-aos-duration="800"
+                data-aos-once="true"
+                data-aos-id="offer-card"
+              >
+                <div class="card-body">
+                  <a href="index.html" class="stretched-link"></a>
+                  <i class="bi bi-box-arrow-up-right h3 link-icon"></i>
+                  <div class="card-logo-container">
+                    <img
+                      src="img/ksiegowosc.png"
+                      alt=""
+                      width="100"
+                      class="rounded-icon"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h5 class="card-title">Usługi księgowe</h5>
+                    <p class="card-text">Tutaj to w ogóle sztos.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Uslugi Card -->
+
+              <!-- Kadry Card -->
+              <div
+                class="card offer-card col-lg-3 m-3 mb-2"
+                data-aos="fade-down"
+                data-aos-duration="800"
+                data-aos-once="true"
+                data-aos-id="offer-card"
+              >
+                <div class="card-body">
+                  <a href="index.html" class="stretched-link"></a>
+                  <div class="card-logo-container">
+                    <img
+                      src="img/kadry.png"
+                      alt=""
+                      width="100"
+                      class="rounded-icon"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h5 class="card-title">Kadry i płace</h5>
+                    <p class="card-text">
+                      A to to robimy tak dobrze, że już się fizycznie nie da
+                      lepiej.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Kadry Card -->
+
+              <!-- More Button -->
+              <div class="container d-flex pl-5 justify-content-center">
+                <a href="about.html" class="btn btn-primary rounded-pill">
+                  Dowiedz się więcej
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Oferta section -->
+
+        <!-- Kontakt section -->
+        <section id="kontakt" class="section kontakt-section mb-4">
+          <div class="container-fluid p-0">
+            <div
+              class="section-header"
+              data-aos="fade-bottom"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              Kontakt
+            </div>
+            <div class="container-fluid bg-light">
+              <div class="col-lg-5 container-fluid bg-light">
+                <!-- Telephone -->
+                <div class="row">
+                  <div class="col-10 my-auto">
+                    <a class="contact-link" href="tel:123456789">
+                      tel. 123456789
+                    </a>
+                  </div>
+                  <div class="col-lg-1 col-2 my-auto d-flex">
+                    <i class="contact-icon bi bi-telephone-fill"></i>
+                  </div>
+                </div>
+
+                <!-- Mobile -->
+                <div class="row vh-5">
+                  <div class="col-10 my-auto">
+                    <a class="contact-link" href="tel:123456789">
+                      tel. kom. 123456789
+                    </a>
+                  </div>
+                  <div class="col-lg-1 col-2 d-flex">
+                    <i class="contact-icon bi bi-phone"></i>
+                  </div>
+                </div>
+
+                <!-- Mail -->
+                <div class="row">
+                  <div class="col-10 my-auto">
+                    <a class="contact-link" href="mailto:xd@mail.com">
+                      email: xd@mail.com
+                    </a>
+                  </div>
+                  <div
+                    class="col-lg-1 col-2 my-auto"
+                  >
+                    <i class="contact-icon bi bi-envelope-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Kontakt section -->
       </div>
-    </section>
-  </div>
-</main>
+    </main>
+
+    <footer-component></footer-component>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/homepage.js"></script>
 
     <script>
       AOS.init();
-      const navLinks = document.querySelectorAll('.nav-item');
-      const menuToggle = document.querySelector('#navbarList');
+      document.addEventListener("aos:in:offer-card", ({ detail }) => {
+        console.log("animated in", detail);
+        setTimeout(() => {
+          detail.style.transition = "transform 0.3s";
+        }, 500);
+      });
+
+      document.addEventListener("aos:out", ({ detail }) => {
+        console.log("animated out", detail);
+      });
+
+      const navLinks = document.querySelectorAll(".nav-item");
+      const menuToggle = document.querySelector("#navbarList");
       navLinks.forEach((elem) => {
-        elem.addEventListener('click', () => {
-          $(".offcanvas").offcanvas('hide');
+        elem.addEventListener("click", () => {
+          $(".offcanvas").offcanvas("hide");
         });
       });
     </script>

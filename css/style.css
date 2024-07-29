@@ -8381,7 +8381,7 @@ textarea.form-control-lg {
   text-align: center !important;
 }
 
-.text-decoration-none {
+.text-decoration-none, .contact-link {
   text-decoration: none !important;
 }
 
@@ -8505,7 +8505,7 @@ textarea.form-control-lg {
   color: var(--bs-emphasis-color) !important;
 }
 
-.text-reset {
+.text-reset, .contact-link {
   --bs-text-opacity: 1;
   color: inherit !important;
 }
@@ -11976,9 +11976,18 @@ textarea.form-control-lg {
   --bs-dark: #343a40;
 }
 
+.html,
+.body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.aos-init:not(.aos-animate):after {
+  position: fixed;
+}
+
 .navbar {
   background-color: var(--bs-light);
-  height: 8vh;
 }
 
 .navbar-brand {
@@ -12019,7 +12028,8 @@ textarea.form-control-lg {
   transition: 0.3s ease-in-out;
 }
 
-.navbar-nav .nav-link:hover::before, .navbar-nav .nav-link.active::before {
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-link.active::before {
   width: 100%;
   visibility: visible;
 }
@@ -12047,7 +12057,8 @@ textarea.form-control-lg {
 .hero-section {
   background: url("../img/about.webp") no-repeat center;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
+  position: relative;
 }
 
 .hero-section .container {
@@ -12075,42 +12086,216 @@ textarea.form-control-lg {
   font-size: 1.1em;
 }
 
-.about-section .container {
-  margin-top: 0.5rm;
+.section .container {
+  margin-top: 0.5rem;
 }
 
-.card {
-  display: flex;
-  flex-direction: row;
-  height: 30vh;
+.footer-nav-item:hover {
+  font-weight: bold;
+  transition: ease-in-out 0.1s;
 }
-.card img {
-  width: 30vh;
-  height: 30vh;
+
+.zoom-on-hover {
+  transition: transform 0.2s;
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.1);
+}
+
+.logo {
+  font-family: "Libre Baskerville", serif;
+  color: rgb(133, 16, 16);
+  font-size: 2rem;
+  position: relative;
+}
+
+.banner {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  position: relative;
+  padding-top: 10vh;
+}
+
+.animate-counter {
+  color: rgb(116, 116, 116);
+  font-weight: bold;
+}
+
+.fs-7 {
+  font-size: 0.875rem !important;
+}
+
+.timeline-container {
+  --tl-color: lightgray;
+  --tl-circle-color: var(--bs-light);
+  --tl-circle-border-color: var(--bs-primary);
+  --tl-indicator-color: var(--bs-white);
+  --tl-circle-size: 2rem;
+  --tl-circle-offset: 1rem;
+  --tl-circle-border-size: 2px;
+  --tl-date-font-size: 2rem;
+}
+
+.timeline-container .timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.timeline-container .timeline:after {
+  background-color: var(--tl-color);
+  bottom: 0;
+  content: "";
+  left: 0;
+  margin-left: -1px;
+  position: absolute;
+  top: 0;
+  width: 2px;
+}
+
+@media (min-width: 768px) {
+  .timeline-container .timeline:after {
+    left: 33%;
+  }
+}
+.timeline-container .timeline > .timeline-item {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.timeline-container .timeline > .timeline-item .timeline-circle {
+  background-color: var(--tl-circle-color);
+  border: var(--tl-circle-border-size) solid var(--tl-circle-border-color);
+  border-radius: 50%;
+  content: "";
+  height: var(--tl-circle-size);
+  left: calc(var(--tl-circle-offset) * -1);
+  position: absolute;
+  top: calc(50% - var(--tl-circle-offset));
+  width: var(--tl-circle-size);
+  z-index: 1;
+  transition: background-color 0.5s ease;
+}
+
+.timeline-container .timeline > .timeline-item .timeline-body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.timeline-container .timeline > .timeline-item .timeline-meta {
+  padding: 0 0 1rem 2rem;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #6c757d;
+}
+
+.timeline-container .timeline > .timeline-item:first-child .timeline-meta {
+  padding: 2rem 0 1rem 2rem;
+}
+
+.timeline-container .timeline > .timeline-item .timeline-content {
+  padding: 0 0 2rem 2rem;
+}
+
+@media (min-width: 768px) {
+  .timeline-container .timeline > .timeline-item {
+    left: 33%;
+    width: 67%;
+  }
+  .timeline-container .timeline > .timeline-item .timeline-meta {
+    display: flex;
+    justify-content: flex-end;
+    left: -100%;
+    margin: 0;
+    padding: 0 2rem 0 0;
+    position: absolute;
+    top: calc(50% - 2.25rem);
+    width: 100%;
+    z-index: 1;
+  }
+  .timeline-container .timeline > .timeline-item:first-child .timeline-meta {
+    padding: 0 2rem 0 0;
+  }
+  .timeline-container .timeline > .timeline-item .timeline-content {
+    padding: 2rem;
+  }
+  .timeline-container .timeline > .timeline-item .timeline-indicator {
+    position: relative;
+  }
+}
+.overlap {
+  margin-left: -10rem;
+  margin-top: 5rem;
+}
+
+.about-subpage-header {
+  position: relative;
+  padding-top: 7vh;
+}
+.about-subpage-header .container {
+  height: 93vh;
+}
+
+.about-subpage-header:before {
+  content: "";
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .clock {
+    margin-top: -3rem;
+  }
+}
+.card-logo-container {
+  position: relative;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.card-logo-container img {
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-.card:hover {
-  border-color: rgb(133, 16, 16);
+.offer-card {
+  transition: transform 0.3s;
 }
 
-.card-body {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #f8f9fa;
-  transition: background-color 0.3s ease-in-out;
-  overflow-y: auto;
+.offer-card:hover {
+  background-color: var(--bs-light);
+  transform: scale(1.1) !important;
 }
 
-.card:hover .card-body {
-  background-color: rgba(129, 15, 15, 0.483);
+.contact-link {
+  font-size: 1.25rem;
 }
 
-.card-title, .card-text {
-  color: black;
+.contact-icon {
+  font-size: 2rem;
+}
+
+.link-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 0.75rem !important;
+  margin-right: 0.75rem !important;
+  color: rgb(133, 16, 16) !important;
 }
 
 /*!
@@ -20012,7 +20197,7 @@ textarea.form-control-lg {
   text-align: center !important;
 }
 
-.text-decoration-none {
+.text-decoration-none, .contact-link {
   text-decoration: none !important;
 }
 
@@ -20136,7 +20321,7 @@ textarea.form-control-lg {
   color: var(--bs-emphasis-color) !important;
 }
 
-.text-reset {
+.text-reset, .contact-link {
   --bs-text-opacity: 1;
   color: inherit !important;
 }
