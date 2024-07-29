@@ -25,13 +25,10 @@ class Header extends HTMLElement {
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="index.html#about">O nas</a>
+                                <a class="nav-link mx-lg-2" href="index.html">Strona główna</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="index.html#certyfikaty">Certyfikaty</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="index.html#kadra">Kadra</a>
+                                <a class="nav-link mx-lg-2" href="about.html">O nas</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link mx-lg-2" href="index.html#oferta">Oferta</a>

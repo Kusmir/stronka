@@ -12055,7 +12055,7 @@ textarea.form-control-lg {
 }
 
 .hero-section {
-  background: url("../img/about.webp") no-repeat center;
+  background: url("../img/stock1.jpeg") no-repeat center;
   background-size: cover;
   height: 100%;
   position: relative;
@@ -12287,6 +12287,38 @@ textarea.form-control-lg {
 
 .contact-icon {
   font-size: 2rem;
+}
+
+.icon {
+  color: rgb(133, 16, 16) !important;
+}
+
+.contact-section-link {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-section-link:hover {
+  transform: scale(1.1);
+}
+
+.contact-section-link .link-text::before {
+  content: "";
+  position: absolute;
+  bottom: 5px; /* Adjust if needed to place underline correctly */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: var(--bs-primary);
+  visibility: hidden;
+  transition: width 0.3s ease-in-out;
+}
+
+.contact-section-link:hover .link-text::before {
+  width: 90%;
+  visibility: visible;
 }
 
 .link-icon {
