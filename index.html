@@ -74,7 +74,7 @@
                 data-aos-duration="800"
                 data-aos-once="true"
               >
-                <img src="img/random1.jpg" alt="" class="img-fluid" />
+                <img src="img/stock2.jpeg" alt="" class="img-fluid" />
               </div>
               <div
                 class="col-lg-8 col-md-8 col-12 ps-lg-5 mt-md-5"
@@ -100,23 +100,7 @@
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        <!-- End About section -->
-
-        <!-- Certyfikaty section -->
-        <div id="certyfikaty" class="pt-4"></div>
-        <section class="section certyfikaty-section mt-5">
-          <div class="container">
-            <div
-              class="section-header"
-              data-aos="fade-bottom"
-              data-aos-duration="1000"
-              data-aos-once="true"
-            >
-              Certyfikaty
-            </div>
-            <div class="row flex-row">
+            <div class="row flex-row my-4">
               <div class="col-lg-7 col-9 ps-lg-5">
                 <h2>Podstawy działalności</h2>
                 <p>
@@ -138,7 +122,7 @@
             </div>
           </div>
         </section>
-        <!-- End Certyfikaty section -->
+        <!-- End About section -->
 
         <!-- Oferta section -->
         <section id="oferta" class="section oferta-section mb-4 mx-4">
@@ -161,7 +145,7 @@
                 data-aos-id="offer-card"
               >
                 <div class="card-body">
-                  <a href="index.html" class="stretched-link"></a>
+                  <a href="offer.html?activeTab=podatki" class="stretched-link"></a>
                   <i class="bi bi-arrow-right-circle h3 link-icon"></i>
                   <i
                     class="bi bi-arrow-right-circle-fill h3 link-icon"
@@ -192,8 +176,12 @@
                 data-aos-id="offer-card"
               >
                 <div class="card-body">
-                  <a href="index.html" class="stretched-link"></a>
-                  <i class="bi bi-box-arrow-up-right h3 link-icon"></i>
+                  <a href="offer.html?activeTab=uslugi" class="stretched-link"></a>
+                  <i class="bi bi-arrow-right-circle h3 link-icon"></i>
+                  <i
+                    class="bi bi-arrow-right-circle-fill h3 link-icon"
+                    style="opacity: 0"
+                  ></i>
                   <div class="card-logo-container">
                     <img
                       src="img/ksiegowosc.png"
@@ -219,7 +207,12 @@
                 data-aos-id="offer-card"
               >
                 <div class="card-body">
-                  <a href="index.html" class="stretched-link"></a>
+                  <a href="offer.html?activeTab=kadry" class="stretched-link"></a>
+                  <i class="bi bi-arrow-right-circle h3 link-icon"></i>
+                  <i
+                    class="bi bi-arrow-right-circle-fill h3 link-icon"
+                    style="opacity: 0"
+                  ></i>
                   <div class="card-logo-container">
                     <img
                       src="img/kadry.png"
@@ -313,6 +306,21 @@
                   <i class="contact-icon bi bi-envelope-fill"></i>
                 </div>
               </div>
+
+              <!-- Address -->
+              <div class="row">
+                <div class="col-10 my-auto">
+                  <a
+                    class="contact-link"
+                    href="https://www.google.pl/maps/place/Biuro+Rachunkowe+Dukat/@53.4249782,14.542282,18z/data=!4m14!1m7!3m6!1s0x4700b9a5b81bdd1d:0xcd722f8fe7741c3c!2sBiuro+Rachunkowe+Dukat!8m2!3d53.424751!4d14.544024!16s%2Fg%2F1pty7320g!3m5!1s0x4700b9a5b81bdd1d:0xcd722f8fe7741c3c!8m2!3d53.424751!4d14.544024!16s%2Fg%2F1pty7320g?entry=ttu"
+                  >
+                    adres
+                  </a>
+                </div>
+                <div class="col-lg-1 col-2 my-auto">
+                  <i class="contact-icon bi bi-geo-alt-fill"></i>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -337,10 +345,6 @@
         setTimeout(() => {
           detail.style.transition = "transform 0.3s";
         }, 500);
-      });
-
-      document.addEventListener("aos:out", ({ detail }) => {
-        console.log("animated out", detail);
       });
 
       const navLinks = document.querySelectorAll(".nav-item");

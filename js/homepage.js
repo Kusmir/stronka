@@ -46,22 +46,22 @@ document.addEventListener("DOMContentLoaded", function() {
         const iconEmpty = card.querySelector(arrowEmpty);
         const iconFill = card.querySelector(arrowFill);
 
-        var iconInterval, newIconInterval;
+        var iconEmptyInterval, iconFillInterval;
 
         card.addEventListener('mouseenter', function() {
-            if (newIconInterval) clearInterval(newIconInterval);
-            if (iconInterval) clearInterval(iconInterval);
+            if (iconFillInterval) clearInterval(iconFillInterval);
+            if (iconEmptyInterval) clearInterval(iconEmptyInterval);
 
-            iconInterval = fadeOut(iconEmpty);
-            newIconInterval = fadeIn(iconFill);
+            iconEmptyInterval = fadeOut(iconEmpty);
+            iconFillInterval = fadeIn(iconFill);
         });
 
         card.addEventListener('mouseleave', function() {
-            if (newIconInterval) clearInterval(newIconInterval);
-            if (iconInterval) clearInterval(iconInterval);
+            if (iconFillInterval) clearInterval(iconFillInterval);
+            if (iconEmptyInterval) clearInterval(iconEmptyInterval);
 
-            newIconInterval = fadeOut(iconFill);
-            iconInterval = fadeIn(iconEmpty);
+            iconFillInterval = fadeOut(iconFill);
+            iconEmptyInterval = fadeIn(iconEmpty);
         });
     });
 });

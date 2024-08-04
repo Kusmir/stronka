@@ -1,24 +1,19 @@
-@import "node_modules/bootstrap/scss/bootstrap";
-
+// Define your custom colors
 $primary: rgb(133, 16, 16);
 $secondary: rgba(129, 15, 15, 0.483);
 
+// Merge the custom colors into Bootstrap's theme colors
 $theme-colors: (
   "primary": $primary,
+  "secondary": $secondary,
 );
 
-$theme-colors: map-merge($theme-colors, $theme-colors);
+// Import Bootstrap's functions and variables
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
 
-:root {
-  --bs-primary: #{$primary};
-  --bs-secondary: #{$secondary};
-  --bs-success: #28a745;
-  --bs-info: #17a2b8;
-  --bs-warning: #ffc107;
-  --bs-danger: #dc3545;
-  --bs-light: #f8f9fa;
-  --bs-dark: #343a40;
-}
+// Include other Bootstrap components as needed
+@import "node_modules/bootstrap/scss/bootstrap";
 
 .html,
 .body {
@@ -157,22 +152,11 @@ $theme-colors: map-merge($theme-colors, $theme-colors);
   position: relative;
 }
 
-.banner {
-  height: 15vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  position: relative;
-  padding-top: 10vh;
-}
-
 .animate-counter {
   color: rgb(116, 116, 116);
   font-weight: bold;
 }
+
 .fs-7 {
   font-size: 0.875rem !important;
 }
@@ -370,4 +354,26 @@ $theme-colors: map-merge($theme-colors, $theme-colors);
   color: $primary !important;
 }
 
+.offer-list {
+  list-style: none;
+  padding-left: 0;
+}
+.offer-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+.offer-list li::before {
+  content: "\F231";
+  font-family: "bootstrap-icons";
+  position: absolute;
+  left: 0;
+  color: $primary;
+  font-size: 20px;
+}
+
+.offer-tab-content {
+  // background-color: yellow !important;
+  min-height: 55vh !important;
+}
 @import "node_modules/bootstrap/scss/bootstrap";

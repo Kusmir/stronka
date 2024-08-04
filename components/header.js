@@ -31,10 +31,10 @@ class Header extends HTMLElement {
                                 <a class="nav-link mx-lg-2" href="about.html">O nas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="index.html#oferta">Oferta</a>
+                                <a class="nav-link mx-lg-2" href="offer.html">Oferta</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="index.html#kontakt">Kontakt</a>
+                                <a class="nav-link mx-lg-2" href="kontakt.html">Kontakt</a>
                             </li>
                         </ul>
                     </div>
