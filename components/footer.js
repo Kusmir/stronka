@@ -12,19 +12,16 @@ class Footer extends HTMLElement {
                 <div class="col-6 col-md-2 mb-3">
                     <ul class="nav flex-column">
                     <li class="nav-item mb-2 footer-nav-item">
-                        <a href="index.html#about" class="nav-link p-0 text-body-secondary">O nas</a>
+                        <a href="index.html" class="nav-link p-0 text-body-secondary">Strona główna</a>
                     </li>
                     <li class="nav-item mb-2 footer-nav-item">
-                        <a href="index.html#certyfikaty" class="nav-link p-0 text-body-secondary">Certyfikaty</a>
+                        <a href="about.html" class="nav-link p-0 text-body-secondary">O nas</a>
                     </li>
                     <li class="nav-item mb-2 footer-nav-item">
-                        <a href="index.html#kadra" class="nav-link p-0 text-body-secondary">Kadra</a>
+                        <a href="offer.html" class="nav-link p-0 text-body-secondary">Oferta</a>
                     </li>
                     <li class="nav-item mb-2 footer-nav-item">
-                        <a href="index.html#oferta" class="nav-link p-0 text-body-secondary">Oferta</a>
-                    </li>
-                    <li class="nav-item mb-2 footer-nav-item">
-                        <a href="index.html#kontakt" class="nav-link p-0 text-body-secondary">Kontakt</a>
+                        <a href="kontakt.html" class="nav-link p-0 text-body-secondary">Kontakt</a>
                     </li>
                     </ul>
                 </div>

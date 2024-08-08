@@ -48,20 +48,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
         var iconEmptyInterval, iconFillInterval;
 
-        card.addEventListener('mouseenter', function() {
+        function handleEnter() {
             if (iconFillInterval) clearInterval(iconFillInterval);
             if (iconEmptyInterval) clearInterval(iconEmptyInterval);
 
             iconEmptyInterval = fadeOut(iconEmpty);
             iconFillInterval = fadeIn(iconFill);
-        });
+        }
 
-        card.addEventListener('mouseleave', function() {
+        function handleLeave() {
             if (iconFillInterval) clearInterval(iconFillInterval);
             if (iconEmptyInterval) clearInterval(iconEmptyInterval);
 
             iconFillInterval = fadeOut(iconFill);
             iconEmptyInterval = fadeIn(iconEmpty);
-        });
+        }
+
+        card.addEventListener('mouseenter', handleEnter);
+        card.addEventListener('mouseleave', handleLeave);
     });
 });
