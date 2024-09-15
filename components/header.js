@@ -34,6 +34,9 @@ class Header extends HTMLElement {
                         <a class="nav-link mx-lg-2" href="offer.html">Oferta</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="cennik.html">Cennik</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link mx-lg-2" href="kontakt.html">Kontakt</a>
                     </li>
                 </ul>
@@ -43,6 +46,17 @@ class Header extends HTMLElement {
 </nav>
 
         `;
+    document.addEventListener("DOMContentLoaded", function() {
+        var currentPage = window.location.pathname.split("/").pop();
+        var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+        navLinks.forEach(function(link) {
+            var linkHref = link.getAttribute("href");
+            if (currentPage === linkHref) {
+                link.classList.add("active")
+            }
+        });
+    });
   }
 }
 

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Biuro Rachunkowe DUKAT</title>
-    <link rel="icon" href="img/rk_logo.png" />
+    <link rel="icon" href="img/dukat_fav.ico" />
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
@@ -43,8 +43,8 @@
       <ul class="nav nav-tabs nav-justified w-100" id="myTab" role="tablist">
         <li class="nav-item w-33" role="presentation">
           <button
-            class="nav-link"
-            id="podatki-tab"
+            class="nav-link offer-tab-link"
+            id="uslugi-tab"
             data-bs-toggle="tab"
             data-bs-target="#podatki"
             type="button"
@@ -52,13 +52,13 @@
             aria-controls="home"
             aria-selected="true"
           >
-            Doradztwo podatkowe
+            Usługi księgowe
           </button>
         </li>
         <li class="nav-item" role="presentation">
           <button
-            class="nav-link"
-            id="uslugi-tab"
+            class="nav-link offer-tab-link"
+            id="kadry-tab"
             data-bs-toggle="tab"
             data-bs-target="#uslugi"
             type="button"
@@ -66,13 +66,13 @@
             aria-controls="profile"
             aria-selected="false"
           >
-            Usługi księgowe
+            Kadry i płace
           </button>
         </li>
         <li class="nav-item" role="presentation">
           <button
-            class="nav-link"
-            id="kadry-tab"
+            class="nav-link text-decoration-none offer-tab-link"
+            id="other-tab"
             data-bs-toggle="tab"
             data-bs-target="#kadry"
             type="button"
@@ -80,12 +80,12 @@
             aria-controls="contact"
             aria-selected="false"
           >
-            Kadry i płace
+            Inne usługi
           </button>
         </li>
       </ul>
 
-      <!-- Doradztwo podatkowe -->
+      <!-- Usługi księgowe -->
       <div class="tab-content mt-3" id="myTabContent">
         <div
           class="tab-pane fade show"
@@ -96,22 +96,42 @@
           <div class="container offer-tab-content">
             <div class="row">
               <div class="mx-auto col-lg-2 col-md-4 col-6">
-                <img src="img/taxes.png" class="img-fluid" />
+                <img src="img/ksiegowosc.png" class="img-fluid" />
               </div>
+            </div>
+            <div class="row justify-content-center">
+              <p class="col-lg-7 lead">
+                Kompleksowo obsługujemy przedsiębiorców z sektora MŚP w zakresie księgowości i
+                rachunkowości.
+                <br />W szerokim wachlarzu naszych usług znajduje się między
+                innymi:
+              </p>
             </div>
             <div class="row">
               <ul class="offer-list mx-auto lead col-lg-6">
-                <li>Usługa 1</li>
-                <li>Usługa 2</li>
-                <li>Usługa 3</li>
-                <li>Usługa 4</li>
+                <li>prowadzenie ksiąg rachunkowych (pełna księgowość)</li>
+                <li>prowadzenie księgi przychodów i rozchodów</li>
+                <li>prowadzenie ewidencji dla ryczałtu ewidencjonowanego</li>
+                <li>
+                  prowadzenie ewidencji pomocniczych (np. środków trwałych)
+                </li>
+                <li>sporządzanie ewidencji i deklaracji dla podatku VAT</li>
+                <li>sporządzanie deklaracji ZUS dla przedsiębiorców</li>
+                <li>sporządzanie sprawozdań do Urzędu Statystycznego (GUS)</li>
+                <li>
+                  sporządzanie rocznych sprawozdań finansowych do KAS lub KRS
+                </li>
+                <li>
+                  sporządzanie podatkowych zeznań rocznych osób fizycznych i
+                  osób prawnych
+                </li>
               </ul>
             </div>
           </div>
         </div>
-        <!-- End Doradztwo podatkowe -->
+        <!-- End Usługi księgowe -->
 
-        <!-- Usługi ksiegowe -->
+        <!-- Kadry i płace -->
         <div
           class="tab-pane fade"
           id="uslugi"
@@ -121,14 +141,31 @@
           <div class="container offer-tab-content">
             <div class="row">
               <div class="mx-auto col-lg-2 col-md-4 col-6">
-                <img src="img/ksiegowosc.png" class="img-fluid" />
+                <img src="img/kadry-icon.png" class="img-fluid" />
               </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <p class="col-lg-7 lead">
+                Profesjonalnie obsługujemy przedsiębiorców w sprawach
+                kadrowo-płacowych związanych z zatrudnieniem pracowników.
+                <br />Nasze usługi obejmują między innymi:
+              </p>
             </div>
 
             <div class="row">
               <ul class="offer-list mx-auto lead col-lg-6">
-                <li>Usługa 1</li>
-                <li>Usługa 2</li>
+                <li>sporządzanie umów o pracę, zlecenia i o dzieło</li>
+                <li>prowadzenie ewidencji czasu pracy</li>
+                <li>prowadzenie akt osobowych</li>
+                <li>monitorowanie terminów szkoleń BHP i badań okresowych</li>
+                <li>sporządzanie list płac</li>
+                <li>deklaracje i rozliczenia z ZUS</li>
+                <li>
+                  sporządzanie informacji i deklaracji rocznych dla pracowników
+                  i płatników (PIT-11, PIT-8A, PIT-4R, PIT-8AR itp.)
+                </li>
+                <li>sporządzanie sprawozdań do Urzędu Statystycznego</li>
               </ul>
             </div>
           </div>
@@ -145,17 +182,41 @@
           <div class="container offer-tab-content">
             <div class="row">
               <div class="mx-auto col-lg-2 col-md-4 col-6">
-                <img src="img/kadry.png" class="img-fluid" />
+                <img src="img/inne-icon.png" class="img-fluid" />
               </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <p class="col-lg-7 lead">
+                W zakresie naszych uprawnień i kompetencji świadczymy pomoc i
+                usługi w obszarze prawno-podatkowym i gospodarczym. <br />
+                Każdy może liczyć na fachową pomoc między innymi w zakresie:
+              </p>
             </div>
 
             <div class="row">
               <ul class="offer-list mx-auto lead col-lg-6">
-                <li>Usługa 1</li>
-                <li>Usługa 2</li>
-                <li>Usługa 3</li>
-                <li>Usługa 4</li>
-                <li>Usługa 5</li>
+                <li>
+                  wybór optymalnej formy organizacyjno-prawnej dla planowanego
+                  przedsięwzięcia/firmy
+                </li>
+                <li>
+                  wybór najkorzystniejszej formy opodatkowania dla działalności
+                  gospodarczej
+                </li>
+                <li>zakładanie nowej firmy</li>
+                <li>sporządzanie wniosków kredytowych, leasingowych itp.</li>
+                <li>przygotowanie analiz i prognoz finansowych</li>
+                <li>
+                  sporządzanie podatkowych zeznań rocznych osób fizycznych
+                </li>
+                <li>rozliczenia przychodu ze sprzedaży nieruchomości</li>
+                <li>sporządzanie deklaracji PCC</li>
+                <li>konsultacja treści umów cywilnoprawnych i handlowych</li>
+                <li>
+                  reprezentowanie przed organami skarbowymi i ZUS w trakcie
+                  kontroli lub czynności sprawdzających
+                </li>
               </ul>
             </div>
           </div>
