@@ -35,7 +35,7 @@ class Footer extends HTMLElement {
         <div class="col-6 col-md-4 mb-3">
           <h5 class="text-body-primary">Kontakt</h5>
           <p class="text-body-secondary">
-            Kopernika 6/3<br>
+            ul. Kopernika 6/3<br>
             70-241 Szczecin<br><br>
             biuro@biurodukat.pl<br>
             tel. 91 431 99 05<br>
