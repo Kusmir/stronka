@@ -2,18 +2,18 @@
 $primary: rgb(133, 16, 16);
 $secondary: rgba(129, 15, 15, 0.483);
 
-// Merge the custom colors into Bootstrap's theme colors
-$theme-colors: (
-  "primary": $primary,
-  "secondary": $secondary,
-);
-
 // Import Bootstrap's functions and variables
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
 
-// Include other Bootstrap components as needed
-@import "node_modules/bootstrap/scss/bootstrap";
+// Merge the custom colors into Bootstrap's theme colors
+$custom-colors: (
+  "primary": $primary,
+  "secondary": $secondary
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
 
 .html,
 .body {
@@ -97,7 +97,7 @@ $theme-colors: (
 }
 
 .hero-section {
-  background: url("../img/new_hero.jpeg") no-repeat center;
+  background: url("../img/new_hero.webp") no-repeat center;
   background-size: cover;
   height: 100%;
   position: relative;
@@ -147,7 +147,7 @@ $theme-colors: (
 }
 
 .logo {
-  font-family: "Libre Baskerville", serif;
+  font-family: "Libre Baskerville";
   color: $primary;
   font-size: 2rem;
   position: relative;
@@ -384,3 +384,7 @@ $theme-colors: (
 }
 
 @import "node_modules/bootstrap/scss/bootstrap";
+// @import "node_modules/bootstrap/scss/images";
+// @import "node_modules/bootstrap/scss/containers";
+// @import "node_modules/bootstrap/scss/grid";
+// 

@@ -1,0 +1,52 @@
+/*!
+ * Bootstrap Icons v1.11.3 (https://icons.getbootstrap.com/)
+ * Copyright 2019-2024 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/icons/blob/main/LICENSE)
+ */
+
+@font-face {
+  font-display: block;
+  font-family: "bootstrap-icons";
+  src: url("./bootstrap-icons-custom-min.woff2") format("woff2"),
+    url("./bootstrap-icons-custom-min.woff") format("woff");
+}
+
+.bi::before,
+[class^="bi-"]::before,
+[class*=" bi-"]::before {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* vertical-align: -.125; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bi-arrow-right-circle-fill:before {
+  content: "\f133";
+}
+.bi-arrow-right-circle:before {
+  content: "\f134";
+}
+.bi-caret-right-fill:before {
+  content: "\f231";
+}
+.bi-envelope-fill:before {
+  content: "\f32c";
+}
+.bi-envelope:before {
+  content: "\f32f";
+}
+.bi-geo-alt-fill:before {
+  content: "\f3e7";
+}
+.bi-phone:before {
+  content: "\f4e7";
+}
+.bi-telephone-fill:before {
+  content: "\f5b4";
+}
