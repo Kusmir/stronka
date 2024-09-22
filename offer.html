@@ -29,8 +29,7 @@
       rel="stylesheet"
     />
 
-    <script src="components/header.js"></script>
-    <script src="components/footer.js"></script>
+    <script src="components.js"></script>
   </head>
   <body>
     <header-component></header-component>
@@ -46,7 +45,7 @@
             class="nav-link offer-tab-link"
             id="uslugi-tab"
             data-bs-toggle="tab"
-            data-bs-target="#podatki"
+            data-bs-target="#uslugi_ksiegowe"
             type="button"
             role="tab"
             aria-controls="home"
@@ -60,7 +59,7 @@
             class="nav-link offer-tab-link"
             id="kadry-tab"
             data-bs-toggle="tab"
-            data-bs-target="#uslugi"
+            data-bs-target="#kadry_i_place"
             type="button"
             role="tab"
             aria-controls="profile"
@@ -74,7 +73,7 @@
             class="nav-link text-decoration-none offer-tab-link"
             id="other-tab"
             data-bs-toggle="tab"
-            data-bs-target="#kadry"
+            data-bs-target="#inne_uslugi"
             type="button"
             role="tab"
             aria-controls="contact"
@@ -85,12 +84,12 @@
         </li>
       </ul>
 
-      <!-- Usługi księgowe -->
       <div class="tab-content mt-3" id="myTabContent">
+        <!-- Usługi księgowe -->
         <div
           class="tab-pane fade show"
           role="tabpanel"
-          id="podatki"
+          id="uslugi_ksiegowe"
           aria-labelledby="podatki-tab"
         >
           <div class="container offer-tab-content">
@@ -134,7 +133,7 @@
         <!-- Kadry i płace -->
         <div
           class="tab-pane fade"
-          id="uslugi"
+          id="kadry_i_place"
           role="tabpanel"
           aria-labelledby="uslugi-tab"
         >
@@ -170,12 +169,12 @@
             </div>
           </div>
         </div>
-        <!-- End Usługi ksiegowe -->
+        <!-- End Kadry i place -->
 
-        <!-- Kadry i place -->
+        <!-- Inne uslugi -->
         <div
           class="tab-pane fade"
-          id="kadry"
+          id="inne_uslugi"
           role="tabpanel"
           aria-labelledby="kadry-tab"
         >
@@ -236,7 +235,7 @@
       document.addEventListener("DOMContentLoaded", function () {
         // Function to activate tab based on URL parameter
         function activateTab(tab) {
-          if (!tab) tab = "podatki";
+          if (!tab) tab = "uslugi_ksiegowe";
           var activeTab = document.querySelector(
             'button[data-bs-target="#' + tab + '"]'
           );
