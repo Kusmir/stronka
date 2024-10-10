@@ -46,14 +46,6 @@ class Footer extends HTMLElement {
         <!-- Google Maps Embedding -->
         <div class="col-12 col-md-5 mb-3" id="map-container">
           <div class="ratio ratio-16x9">
-            <iframe
-              class="w-100 h-100"
-              loading="lazy"
-              allowfullscreen
-              referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC1dTuIlsbbQbgyfZP9QvvSxdnmJEuhOn0&q=Biuro+Rachunkowe+Dukat"
-              aria-label="Google Maps location of Biuro Rachunkowe Dukat">
-            </iframe>
           </div>
         </div>
       </div>

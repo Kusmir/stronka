@@ -21,6 +21,13 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   overflow-x: hidden;
 }
 
+.floating-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
 .aos-init:not(.aos-animate):after {
   position: fixed;
 }
